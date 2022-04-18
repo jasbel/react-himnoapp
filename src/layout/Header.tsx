@@ -1,4 +1,5 @@
-import { Container } from '@mui/material';
+
+import { Container } from '@chakra-ui/react';
 import logo from '../logo.svg'
 import { responsive } from '../utils/responsive';
 
