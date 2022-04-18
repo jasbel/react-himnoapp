@@ -1,20 +1,16 @@
 
 import './App.css'
 import Home from './pages/Home'
-import Header from './layout/Header'
-import Footer from './layout/Footer'
 import { ChakraProvider } from '@chakra-ui/react'
+import Layout from './layout/Layout'
+import { theme } from './config/theme'
 
 function App() {
-  
-
   return (
-    <ChakraProvider>
-    <div className="App">
-        <Header />
+    <ChakraProvider theme={theme}>
+      <Layout>
         <Home />
-        <Footer />
-    </div>
+      </Layout>
     </ChakraProvider>
   )
 }
