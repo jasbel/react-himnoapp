@@ -1,18 +1,13 @@
-
-import './App.css'
-import Home from './pages/Home'
-import { ChakraProvider } from '@chakra-ui/react'
-import Layout from './layout/Layout'
-import { theme } from './config/theme'
+import "./App.css";
+import Home from "./pages/Home";
+import Layout from "./layout/Layout";
 
 function App() {
   return (
-    <ChakraProvider theme={theme}>
-      <Layout>
-        <Home />
-      </Layout>
-    </ChakraProvider>
-  )
+    <Layout>
+      <Home />
+    </Layout>
+  );
 }
 
-export default App
+export default App;
